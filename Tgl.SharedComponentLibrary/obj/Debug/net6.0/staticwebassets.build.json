@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "ER/iFS6ksIe8uTroj7NI/arh1lrLByFpYNoVlBM6/CQ=",
+  "Source": "Tgl.SharedComponentLibrary",
+  "BasePath": "_content/Tgl.SharedComponentLibrary",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Tgl.SharedComponentLibrary\\wwwroot",
+      "Source": "Tgl.SharedComponentLibrary",
+      "ContentRoot": "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\wwwroot\\",
+      "BasePath": "_content/Tgl.SharedComponentLibrary",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\clickAndPositionHandler.js",
+      "SourceId": "BlazorDateRangePicker",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\",
+      "BasePath": "_content/BlazorDateRangePicker",
+      "RelativePath": "clickAndPositionHandler.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\clickAndPositionHandler.js"
+    },
+    {
+      "Identity": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\daterangepicker.css",
+      "SourceId": "BlazorDateRangePicker",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\",
+      "BasePath": "_content/BlazorDateRangePicker",
+      "RelativePath": "daterangepicker.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\daterangepicker.css"
+    },
+    {
+      "Identity": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\daterangepicker.min.css",
+      "SourceId": "BlazorDateRangePicker",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\",
+      "BasePath": "_content/BlazorDateRangePicker",
+      "RelativePath": "daterangepicker.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\daterangepicker.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\daterangepicker.scss",
+      "SourceId": "BlazorDateRangePicker",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\",
+      "BasePath": "_content/BlazorDateRangePicker",
+      "RelativePath": "daterangepicker.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\daterangepicker.scss"
+    }
+  ]
+}

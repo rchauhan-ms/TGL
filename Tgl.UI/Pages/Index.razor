@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<PageTitle>Shipments</PageTitle>
+
+<h1>Shipment Summary</h1>
+
+<Filter OnFilterSelected="@ApplyFilterOnSummary" ShipmentFilter="@ShipmentFilterViewModel"></Filter>
+
+<Summary ShipmentSummaries="@ShipmentSummaries"></Summary>
+
+

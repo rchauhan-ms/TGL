@@ -1,0 +1,10 @@
+﻿@using Tgl.Shared.Domain
+@using Tgl.Shared.Models
+
+<select multiple @onchange="OnToLocationSelect" class="form-control">
+    @foreach (var city in MockDataService.ToLocationDropdownList)
+    {
+        <option value="@city.Id">@city.Name</option>
+    }
+</select>
+
