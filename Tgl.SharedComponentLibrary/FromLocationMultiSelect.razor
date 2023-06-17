@@ -1,18 +1,17 @@
-﻿@*@using Tgl.Shared.Domain
+﻿@using Tgl.Shared.Domain
 @using Tgl.Shared.Models
 
-<select multiple @bind="SelectedLocations" class="form-control">
+@*<select multiple @bind="SelectedLocations" class="form-control">
     @foreach (var city in MockDataService.FromLocationDropdownList)
     {
         <option value="@city.Id">@city.Name</option>
     }
 </select>*@
 
-@using Tgl.Shared.Models;
-<select multiple @bind="FromLocationSelected">
+@*<select multiple @bind="ShipmentFilter.UserFilter.FromLocationSelected" class="form-select">
     @foreach (var city in MockDataService.FromLocationDropdownList)
     {
         <option value="@city.Id">@city.Name</option>
     }
-</select>
+</select>*@
 

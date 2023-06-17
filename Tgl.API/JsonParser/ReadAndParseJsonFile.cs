@@ -7,7 +7,7 @@ namespace Tgl.API.JsonParser
     public class ReadAndParseJsonFile : IReadAndParseJsonFile
     {
         private readonly string _jsonFilePath = @"wwwroot\userfilter.json";
-        private readonly string _fileName = "userfilter.json";
+        private readonly ILogger _logger;
 
         private readonly JsonSerializerOptions _options = new()
         {
@@ -15,8 +15,9 @@ namespace Tgl.API.JsonParser
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
         };
 
-        public ReadAndParseJsonFile()
+        public ReadAndParseJsonFile(ILogger<IReadAndParseJsonFile> logger)
         {
+            _logger = logger;
         }
 
         public async Task<UserFilter> ReadJsonToObject()

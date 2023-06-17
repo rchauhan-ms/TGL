@@ -11,26 +11,35 @@ namespace Tgl.API.Controllers
     public class ShipmentController : Controller
     {
         private readonly IShipmentRepository _shipmentRepository;
-        public ShipmentController(IShipmentRepository shipmentRepository)
+        private readonly ILogger _logger;
+        public ShipmentController(IShipmentRepository shipmentRepository, ILogger<ShipmentController> logger)
         {
             _shipmentRepository = shipmentRepository;
+            _logger = logger;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [HttpGet(Name = "allshipments")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetAllAsync()
         {
-            var shipments = await _shipmentRepository.GetAll();
+            var shipments = await _shipmentRepository.GetAllAsync();
+            if (shipments is null)
+                return NoContent();
+
             return Ok(shipments);
         }
 
-        [HttpPost]
+        [HttpPost(Name = "filteredshipments")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> GetFilteredShipments([FromBody] UserFilter filter)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetFilteredShipmentsAsync([FromBody] UserFilter filter)
         {
             if (filter == null)
                 return BadRequest();
 
-            var shipments = await _shipmentRepository.GetFilteredShipments(filter);
+            var shipments = await _shipmentRepository.GetFilteredShipmentsAsync(filter);
             return Ok(shipments);
         }
     }

@@ -5,12 +5,12 @@ namespace Tgl.API.Models
 {
     public class ShipmentRepository : IShipmentRepository
     {
-        public async Task<IEnumerable<ShipmentSummary>> GetAll()
+        public async Task<IEnumerable<ShipmentSummary>> GetAllAsync()
         {
             return await ShipmentDataStore.ShipmentSummaries();
         }
 
-        public async Task<IEnumerable<ShipmentSummary>> GetFilteredShipments(UserFilter filter)
+        public async Task<IEnumerable<ShipmentSummary>> GetFilteredShipmentsAsync(UserFilter filter)
         {
             //TODO: Implement rest of the filters..
             if (filter.FromLocationSelected.Length > 0)

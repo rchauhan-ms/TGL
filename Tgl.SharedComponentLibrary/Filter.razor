@@ -3,66 +3,79 @@
 @using BlazorDateRangePicker
 @using Microsoft.AspNetCore.Components.Forms;
 
-<div class="col-6">
-    @foreach (var filter in ShipmentFilter.CheckboxFilters)
-    {
-        <div class="form-check form-check-inline">
-            <input class="form-check-input"
-                   type="checkbox"
-                   id="@filter.Id"
-                   value="@filter.IsFilterChecked"
-                   @bind ="@filter.IsFilterChecked"/>
+<div class="row">
+    <div class="col-4">
+        <ul class="list-group list-group-flush">
+            @foreach (var filter in ShipmentFilterViewModel.CheckboxFilters)
+            {
+                <li class="list-group-item">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"
+                               type="checkbox"
+                               id="@filter.Id"
+                               value="@filter.IsFilterChecked"
+                                @bind="@filter.IsFilterChecked" />
+                        <label class="form-check-label" for="@filter.Id">@filter.Name</label>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="col-offset-2 col-7">
+        <ul class="list-group list-group-flush">
+            @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "FromLocationComponent" && x.IsFilterChecked))
+        {
+            <li class="list-group-item">
+                    @*<FromLocationMultiSelect OnFromLocationSelected="AddFromLocationSelected"></FromLocationMultiSelect>*@
+                    <label class="label fw-bold fs-6">From Location</label>
+                    <select multiple @bind="ShipmentFilterViewModel.UserFilter.FromLocationSelected" class="form-select">
+                        @foreach (var city in MockDataService.FromLocationDropdownList)
+                        {
+                            <option value="@city.Id">@city.Name</option>
+                        }
+                    </select>
+                </li>
+        }
+            @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "ToLocationComponent" && x.IsFilterChecked))
+        {
+            <li class="list-group-item">
+                    @*<ToLocationMultiSelect OnToLocationSelected="AddToLocationSelected"></ToLocationMultiSelect>*@
+                    <label class="label fw-bold fs-6">To Destination</label>
+                    <select multiple @bind="ShipmentFilterViewModel.UserFilter.ToLocationSelected" class="form-select">
+                        @foreach (var city in MockDataService.ToLocationDropdownList)
+                        {
+                            <option value="@city.Id">@city.Name</option>
+                        }
+                    </select>
+                </li>
+        }
+            @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "DeliveryDatePeriodComponent" && x.IsFilterChecked))
+        {
+                <li class="list-group-item">
+                    <label class="label fw-bold fs-6">Delivery Date Period</label>
+                    <DateRangePicker OnRangeSelect="OnRangeSelect" class="form-control" placeholder="Select dates..." />
+                </li>
+        }
+            @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "ShipmentCostComponent" && x.IsFilterChecked))
+        {
+            <li class="list-group-item">
+                    @*<ShipmentCostMultiSelect OnShipmentCostSelected="AddShipmentCostSelected"></ShipmentCostMultiSelect>*@
+                    <label class="label  fw-bold fs-6">Shipment Cost</label>
+                    <select @bind="ShipmentFilterViewModel.UserFilter.ShipmentCostSelected" class="form-control" placeholder="Select shipment cost">
+                        @foreach (var shipmentCost in MockDataService.ShipmentCostsDropdownList)
+                        {
+                            <option value="@shipmentCost.Id">@shipmentCost.AmountText</option>
+                        }
+                    </select>
+                </li>
+        }
 
-            <label class="form-check-label" for="@filter.Id">@filter.Name</label>
-        </div>
-    }
-
-    <div class="row">
-        @if (ShipmentFilter.CheckboxFilters.Any(x=>x.Value == "FromLocationComponent" && x.IsFilterChecked))
+            @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.IsFilterChecked == true))
         {
-            <div class="col-3">
-                <select multiple @bind="ShipmentFilter.UserFilter.FromLocationSelected">
-                    @foreach (var city in MockDataService.FromLocationDropdownList)
-                    {
-                        <option value="@city.Id">@city.Name</option>
-                    }
-                </select>
-            </div>
+            <li class="list-group-item">
+                    <button type="button" @onclick="ApplyFilter" class="btn btn-success">Apply Filters</button>
+            </li>
         }
-        @if (ShipmentFilter.CheckboxFilters.Any(x => x.Value == "ToLocationComponent" && x.IsFilterChecked))
-        {
-            <div class="col-3">
-                @*<ToLocationMultiSelect OnToLocationSelected="AddToLocationSelected"></ToLocationMultiSelect>*@
-                <select multiple @bind="ShipmentFilter.UserFilter.ToLocationSelected">
-                    @foreach (var city in MockDataService.ToLocationDropdownList)
-                    {
-                        <option value="@city.Id">@city.Name</option>
-                    }
-                </select>
-            </div>
-        }
-        @if (ShipmentFilter.CheckboxFilters.Any(x => x.Value == "DeliveryDatePeriodComponent" && x.IsFilterChecked))
-        {
-            <div class="col-3">
-                <DateRangePicker OnRangeSelect="OnRangeSelect" class="form-control" placeholder="Select dates..." />
-            </div>
-        }
-        @if (ShipmentFilter.CheckboxFilters.Any(x => x.Value == "ShipmentCostComponent" && x.IsFilterChecked))
-        {
-            <div class="col-3">
-                @*<ShipmentCostMultiSelect OnShipmentCostSelected="AddShipmentCostSelected"></ShipmentCostMultiSelect>*@
-                <select @bind="ShipmentFilter.UserFilter.ShipmentCostSelected" class="form-control">
-                    @foreach (var shipmentCost in MockDataService.ShipmentCostsDropdownList)
-                    {
-                        <option value="@shipmentCost.Id">@shipmentCost.AmountText</option>
-                    }
-                </select>
-            </div>
-        }
-
-        @if(ShipmentFilter.CheckboxFilters.Any(x=>x.IsFilterChecked == true))
-        {
-            <button type="button" @onclick="ApplyFilter" class="btn btn-success">Apply Filters</button>
-        }
+        </ul>
     </div>
 </div>

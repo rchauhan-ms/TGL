@@ -13,14 +13,38 @@ namespace Tgl.UI.Pages
         [Inject]
         public IUserFilterDataService UserFilterDataService { get; set; }
 
-        async Task ApplyFilterOnSummary(UserFilter userFilter)
+        async Task ApplyFilterOnSummary(ShipmentFilterViewModel shipmentFilter)
         {
+            UpdateUserFilterOnCheckbox(shipmentFilter);
+
             //save filters to json file
-            var isFilterSaved = (await UserFilterDataService.SaveUserFilterAsync(userFilter));
+            var isFilterSaved = (await UserFilterDataService.SaveUserFilterAsync(shipmentFilter.UserFilter));
 
             //TODO: Filter the list of summaries based on the filters selected...
-            var filteredShipments = (await ShipmentDataService.GetFilteredShipments(userFilter)).ToList();
-            ShipmentSummaries = filteredShipments;
+            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(shipmentFilter.UserFilter)).ToList();
+        }
+
+        private void UpdateUserFilterOnCheckbox(ShipmentFilterViewModel shipmentFilter)
+        {
+            foreach (var filter in shipmentFilter.CheckboxFilters)
+            {
+                if (filter.Value == "FromLocationComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.FromLocationSelected = Array.Empty<string>();
+                }
+                else if (filter.Value == "ToLocationComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.ToLocationSelected = Array.Empty<string>();
+                }
+                else if (filter.Value == "DeliveryDatePeriodComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.DeliveryPeriodSelected = new ();
+                }
+                else if (filter.Value == "ShipmentCostComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.ShipmentCostSelected = string.Empty;
+                }
+            }
         }
 
         public List<ShipmentSummary> ShipmentSummaries { get; set; } = new();
@@ -31,7 +55,7 @@ namespace Tgl.UI.Pages
             //Get UserFilters
             UserFilter = await UserFilterDataService.GetUserFilterAsync(); 
 
-            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipments(UserFilter)).ToList();
+            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(UserFilter)).ToList();
             ShipmentFilterViewModel = MockDataService.ShipmentFilterViewModel(UserFilter);
         }
     }
