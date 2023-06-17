@@ -6,10 +6,14 @@ namespace Tgl.SharedComponentLibrary
     {
         [Parameter]
         public EventCallback<string[]> OnFromLocationSelected { get; set; }
+        
+        [Parameter]
+        public string[] SelectedLocations { get; set; } = new string[] { };
+        //void OnFromLocationSelect(ChangeEventArgs args)
+        //{
+        //    OnFromLocationSelected.InvokeAsync((string[]?)args.Value);
+        //}
 
-        void OnFromLocationSelect(ChangeEventArgs args)
-        {
-            OnFromLocationSelected.InvokeAsync((string[]?)args.Value);
-        }
+
     }
 }

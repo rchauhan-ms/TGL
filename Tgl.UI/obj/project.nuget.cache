@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yvMPWi4snZzk+E6BE5kWun+6zdoduPhcya6jwVxCWSGBmi50baRC3tMHSPvChY/PRcxIceusgR3ejjfIOBx+JQ==",
+  "dgSpecHash": "ftdr9bpYG3ELfukMC0IloV2K9L7bTqj6lSDUrWvBBI8vwoIginsEVcvV+sgp5Ftf9GqpMjqaxu5hz6kp5IG19g==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Blazor\\Tgl\\Tgl.UI\\Tgl.UI.csproj",
+  "projectFilePath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.UI\\Tgl.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\blazordaterangepicker.4.3.0.nupkg.sha512",
     "C:\\Users\\chauh\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.3\\microsoft.aspnetcore.authorization.6.0.3.nupkg.sha512",
@@ -34,8 +34,7 @@
     "C:\\Users\\chauh\\.nuget\\packages\\system.io.pipelines\\6.0.2\\system.io.pipelines.6.0.2.nupkg.sha512",
     "C:\\Users\\chauh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\chauh\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\chauh\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\chauh\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.3.nupkg.sha512"
+    "C:\\Users\\chauh\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

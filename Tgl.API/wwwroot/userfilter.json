@@ -1,1 +1,11 @@
-{"FromLocationSelected":["4"],"ToLocationSelected":["3"],"ShipmentCostSelected":"2000.00","DeliveryPeriodSelected":{"StartDate":"2023-06-16T01:15:55.309Z","EndDate":"2023-06-16T01:15:55.309Z","StartDateText":"03 Feb 2023","EndDateText":"12 Dec 2023"}}
+{
+  "FromLocationSelected": [ "4" ],
+  "ToLocationSelected": [ "3" ],
+  "ShipmentCostSelected": "3",
+  "DeliveryPeriodSelected": {
+    "StartDate": "2023-06-14T00:00:00",
+    "EndDate": "2023-06-17T23:59:59.9999999",
+    "StartDateText": "14 Jun 2023",
+    "EndDateText": "17 Jun 2023"
+  }
+}

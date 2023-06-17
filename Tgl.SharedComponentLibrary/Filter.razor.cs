@@ -13,11 +13,11 @@ namespace Tgl.SharedComponentLibrary
         [Parameter]
         public EventCallback<UserFilter> OnFilterSelected { get; set; }
 
-        void AddToFromLocationSelected(string[] locationSelected) => ShipmentFilter.UserFilter.FromLocationSelected = locationSelected;
+        //void AddToFromLocationSelected(string[] locationSelected) => ShipmentFilter.UserFilter.FromLocationSelected = locationSelected;
 
-        void AddToLocationSelected(string[] locationSelected)=> ShipmentFilter.UserFilter.ToLocationSelected = locationSelected;
+        //void AddToLocationSelected(string[] locationSelected)=> ShipmentFilter.UserFilter.ToLocationSelected = locationSelected;
 
-        void AddShipmentCostSelected(string shipmentCostSelected)=> ShipmentFilter.UserFilter.ShipmentCostSelected = shipmentCostSelected;
+        //void AddShipmentCostSelected(string shipmentCostSelected)=> ShipmentFilter.UserFilter.ShipmentCostSelected = shipmentCostSelected;
 
         public void OnRangeSelect(DateRange range)
         {
@@ -32,34 +32,33 @@ namespace Tgl.SharedComponentLibrary
 
         void ApplyFilter()=> OnFilterSelected.InvokeAsync(ShipmentFilter.UserFilter);
 
-        protected override Task OnInitializedAsync()
-        {
-            return base.OnInitializedAsync();
-        }
+        //private bool _isFromLocationChecked = false;
+        //private bool _isToLocationChecked = false;
+        //private bool _isDeliveryDatePeriodChecked = false;
+        //private bool _isShipmentCostChecked = false;
 
-        private bool _isFromLocationChecked = false;
-        private bool _isToLocationChecked = false;
-        private bool _isDeliveryDatePeriodChecked = false;
-        private bool _isShipmentCostChecked = false;
+        //private void CheckboxClickedAction(int key, object componentToLoad)
+        //{
 
-        private void CheckboxClicked(string filterKey, object checkedValue)
-        {
-            if (filterKey == ShipmentFilterConst.FROMLOCATION)
-            {
-                _isFromLocationChecked = (bool)checkedValue;
-            }
-            if (filterKey == ShipmentFilterConst.TOLOCATION)
-            {
-                _isToLocationChecked = (bool)checkedValue;
-            }
-            if (filterKey == ShipmentFilterConst.DELIVERYDATEPERIOD)
-            {
-                _isDeliveryDatePeriodChecked = (bool)checkedValue;
-            }
-            if (filterKey == ShipmentFilterConst.SHIPMENTCOST)
-            {
-                _isShipmentCostChecked = (bool)checkedValue;
-            }
-        }
+        //}
+        //private void CheckboxClicked(string filterKey, object checkedValue)
+        //{
+        //    if (filterKey == ShipmentFilterConst.FROMLOCATION)
+        //    {
+        //        _isFromLocationChecked = (bool)checkedValue;
+        //    }
+        //    if (filterKey == ShipmentFilterConst.TOLOCATION)
+        //    {
+        //        _isToLocationChecked = (bool)checkedValue;
+        //    }
+        //    if (filterKey == ShipmentFilterConst.DELIVERYDATEPERIOD)
+        //    {
+        //        _isDeliveryDatePeriodChecked = (bool)checkedValue;
+        //    }
+        //    if (filterKey == ShipmentFilterConst.SHIPMENTCOST)
+        //    {
+        //        _isShipmentCostChecked = (bool)checkedValue;
+        //    }
+        //}
     }
 }

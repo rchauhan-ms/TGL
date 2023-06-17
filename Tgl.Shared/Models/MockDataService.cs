@@ -7,8 +7,8 @@ namespace Tgl.Shared.Models
         //send filter dictionary 
         public static ShipmentFilterViewModel ShipmentFilterViewModel(UserFilter filter)
         {
-                var shipmentFilterViewModel = new ShipmentFilterViewModel();
-                shipmentFilterViewModel.Filters = new Dictionary<string, string>()
+            var shipmentFilterViewModel = new ShipmentFilterViewModel();
+            shipmentFilterViewModel.Filters = new Dictionary<string, string>()
                 {
                     { "FromLocation", "From Location"},
                     { "ToLocation", "To Location"},
@@ -16,8 +16,17 @@ namespace Tgl.Shared.Models
                     { "ShipmentCost", "Shipment Costs"},
                 };
 
-                shipmentFilterViewModel.UserFilter = filter;
-                return shipmentFilterViewModel;
+            var checkboxFilter = new List<CheckboxFilter>()
+            {
+                { new CheckboxFilter { Id = 1, Name = "From Location", Value = "FromLocationComponent", IsFilterChecked = false } },
+                { new CheckboxFilter { Id = 2, Name = "To Location", Value = "ToLocationComponent", IsFilterChecked = false } },
+                { new CheckboxFilter { Id = 3, Name = "Delivery Date Period", Value = "DeliveryDatePeriodComponent", IsFilterChecked = false } },
+                { new CheckboxFilter { Id = 4, Name = "Shipment Costs", Value = "ShipmentCostComponent", IsFilterChecked = false } },
+            };
+            shipmentFilterViewModel.CheckboxFilters = checkboxFilter;
+
+            shipmentFilterViewModel.UserFilter = filter;
+            return shipmentFilterViewModel;
         }
         public static Dictionary<string, string> Filters
         {
@@ -55,7 +64,7 @@ namespace Tgl.Shared.Models
         {
             get
             {
-                return MockDataService.Cities.Where(x=> x.Id%2==0).ToList();
+                return MockDataService.Cities.Where(x => x.Id % 2 == 0).ToList();
             }
         }
         //to location dropdown list

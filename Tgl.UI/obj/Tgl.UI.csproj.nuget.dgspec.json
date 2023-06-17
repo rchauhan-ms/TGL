@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Blazor\\Tgl\\Tgl.UI\\Tgl.UI.csproj": {}
+    "C:\\Projects\\ThinkGlobalLogistics\\Tgl.UI\\Tgl.UI.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj": {
+    "C:\\Projects\\ThinkGlobalLogistics\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj",
+        "projectUniqueName": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj",
         "projectName": "Tgl.SharedComponentLibrary",
-        "projectPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj",
+        "projectPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj",
         "packagesPath": "C:\\Users\\chauh\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\obj\\",
+        "outputPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.SharedComponentLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\chauh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -28,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\Tgl.Shared.csproj": {
-                "projectPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\Tgl.Shared.csproj"
+              "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj": {
+                "projectPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj"
               }
             }
           }
@@ -59,7 +62,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,19 +72,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\Tgl.Shared.csproj": {
+    "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\Tgl.Shared.csproj",
+        "projectUniqueName": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj",
         "projectName": "Tgl.Shared",
-        "projectPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\Tgl.Shared.csproj",
+        "projectPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj",
         "packagesPath": "C:\\Users\\chauh\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\obj\\",
+        "outputPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\chauh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -113,7 +120,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -122,19 +130,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\Blazor\\Tgl\\Tgl.UI\\Tgl.UI.csproj": {
+    "C:\\Projects\\ThinkGlobalLogistics\\Tgl.UI\\Tgl.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Blazor\\Tgl\\Tgl.UI\\Tgl.UI.csproj",
+        "projectUniqueName": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.UI\\Tgl.UI.csproj",
         "projectName": "Tgl.UI",
-        "projectPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.UI\\Tgl.UI.csproj",
+        "projectPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.UI\\Tgl.UI.csproj",
         "packagesPath": "C:\\Users\\chauh\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.UI\\obj\\",
+        "outputPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.UI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\chauh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -150,11 +161,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj": {
-                "projectPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj"
+              "C:\\Projects\\ThinkGlobalLogistics\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj": {
+                "projectPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj"
               },
-              "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\Tgl.Shared.csproj": {
-                "projectPath": "C:\\Projects\\Blazor\\Tgl\\Tgl.Shared\\Tgl.Shared.csproj"
+              "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj": {
+                "projectPath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj"
               }
             }
           }
@@ -189,22 +200,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.3, 6.0.3]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

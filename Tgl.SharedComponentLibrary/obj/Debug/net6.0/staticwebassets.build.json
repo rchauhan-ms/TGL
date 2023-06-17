@@ -1,20 +1,12 @@
 {
   "Version": 1,
-  "Hash": "ER/iFS6ksIe8uTroj7NI/arh1lrLByFpYNoVlBM6/CQ=",
+  "Hash": "Q0gDDtICQ+8yDn0ovnnZ7QgkJ43bQhh887ZiNUYbAdw=",
   "Source": "Tgl.SharedComponentLibrary",
   "BasePath": "_content/Tgl.SharedComponentLibrary",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "Tgl.SharedComponentLibrary\\wwwroot",
-      "Source": "Tgl.SharedComponentLibrary",
-      "ContentRoot": "C:\\Projects\\Blazor\\Tgl\\Tgl.SharedComponentLibrary\\wwwroot\\",
-      "BasePath": "_content/Tgl.SharedComponentLibrary",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": [
     {
       "Identity": "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\staticwebassets\\clickAndPositionHandler.js",

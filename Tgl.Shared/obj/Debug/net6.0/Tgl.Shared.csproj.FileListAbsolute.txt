@@ -10,3 +10,15 @@ C:\Projects\Blazor\Tgl\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.dll
 C:\Projects\Blazor\Tgl\Tgl.Shared\obj\Debug\net6.0\refint\Tgl.Shared.dll
 C:\Projects\Blazor\Tgl\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.pdb
 C:\Projects\Blazor\Tgl\Tgl.Shared\obj\Debug\net6.0\ref\Tgl.Shared.dll
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\bin\Debug\net6.0\Tgl.Shared.deps.json
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\bin\Debug\net6.0\Tgl.Shared.dll
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\bin\Debug\net6.0\Tgl.Shared.pdb
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.csproj.AssemblyReference.cache
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.AssemblyInfoInputs.cache
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.AssemblyInfo.cs
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.dll
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\refint\Tgl.Shared.dll
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.pdb
+C:\Projects\ThinkGlobalLogistics\Tgl.Shared\obj\Debug\net6.0\ref\Tgl.Shared.dll
