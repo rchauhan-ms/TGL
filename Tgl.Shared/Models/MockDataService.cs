@@ -4,28 +4,39 @@ namespace Tgl.Shared.Models
 {
     public class MockDataService
     {
-        //send filter dictionary 
         public static ShipmentFilterViewModel ShipmentFilterViewModel(UserFilter filter)
         {
             var shipmentFilterViewModel = new ShipmentFilterViewModel();
-            shipmentFilterViewModel.Filters = new Dictionary<string, string>()
-                {
-                    { "FromLocation", "From Location"},
-                    { "ToLocation", "To Location"},
-                    { "DeliveryDatePeriod", "Delivery Date Period"},
-                    { "ShipmentCost", "Shipment Costs"},
-                };
 
-            var checkboxFilter = new List<CheckboxFilter>()
+            var checkboxFilters = new List<CheckboxFilter>()
             {
                 { new CheckboxFilter { Id = 1, Name = "From Location", Value = "FromLocationComponent", IsFilterChecked = false } },
                 { new CheckboxFilter { Id = 2, Name = "To Location", Value = "ToLocationComponent", IsFilterChecked = false } },
                 { new CheckboxFilter { Id = 3, Name = "Delivery Date Period", Value = "DeliveryDatePeriodComponent", IsFilterChecked = false } },
                 { new CheckboxFilter { Id = 4, Name = "Shipment Costs", Value = "ShipmentCostComponent", IsFilterChecked = false } },
             };
-            shipmentFilterViewModel.CheckboxFilters = checkboxFilter;
+            
+            if(filter.FromLocationSelected.Length > 0)
+            {
+                checkboxFilters[0].IsFilterChecked = true;
+            }
+            if (filter.ToLocationSelected.Length > 0)
+            {
+                checkboxFilters[1].IsFilterChecked = true;
+            }
+            if (filter.DeliveryPeriodSelected.StartDateText.Length > 0 || filter.DeliveryPeriodSelected.EndDateText.Length > 0)
+            {
+                checkboxFilters[2].IsFilterChecked = true;
+            }
+            if (!string.IsNullOrEmpty(filter.ShipmentCostSelected))
+            {
+                checkboxFilters[3].IsFilterChecked = true;
+            }
+
+            shipmentFilterViewModel.CheckboxFilters = checkboxFilters;
 
             shipmentFilterViewModel.UserFilter = filter;
+
             return shipmentFilterViewModel;
         }
         public static Dictionary<string, string> Filters

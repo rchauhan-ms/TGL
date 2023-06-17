@@ -1,0 +1,12 @@
+@using Tgl.Shared.Models;
+<select multiple @bind="FromLocationSelected">
+    @foreach (var city in MockDataService.FromLocationDropdownList)
+    {
+        <option value="@city.Id">@city.Name</option>
+    }
+</select>
+
+@code{
+    [Parameter]
+    public string[] FromLocationSelected { get; set; }
+}
