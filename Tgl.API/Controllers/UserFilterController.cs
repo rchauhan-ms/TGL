@@ -21,11 +21,18 @@ namespace Tgl.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetUserFilterAsync()
         {
-            var filters = await _userFilterRepository.GetUserFilterAsync();
-            if(filters is null)
-                return NoContent();
-            
-            return Ok(filters);
+            try
+            {
+                var filters = await _userFilterRepository.GetUserFilterAsync();
+                if (filters is null)
+                    return NoContent();
+
+                return Ok(filters);
+            }
+            catch (Exception ex)
+            {
+                return NotFound();
+            }
         }
 
         [HttpPost]

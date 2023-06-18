@@ -14,9 +14,17 @@ namespace Tgl.UI.Services
 
         public async Task<UserFilter> GetUserFilterAsync()
         {
-            var userFilter = await JsonSerializer.DeserializeAsync<UserFilter>(
+            try
+            {
+                var userFilter = await JsonSerializer.DeserializeAsync<UserFilter>(
                 await _httpClient.GetStreamAsync($"api/userfilter"), new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-            return userFilter;
+
+                return userFilter;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<bool> SaveUserFilterAsync(UserFilter userFilter)

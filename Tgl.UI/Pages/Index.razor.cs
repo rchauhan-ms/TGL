@@ -52,7 +52,9 @@ namespace Tgl.UI.Pages
         {
             //Get UserFilters
             UserFilter = await UserFilterDataService.GetUserFilterAsync();
-            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(UserFilter)).ToList();
+            
+            ShipmentSummaries = UserFilter == null ? (await ShipmentDataService.GetAllAsync()).ToList() :
+                (await ShipmentDataService.GetFilteredShipmentsAsync(UserFilter)).ToList();
 
             ShipmentFilterViewModel = MockDataService.ShipmentFilterViewModel(UserFilter);
         }
