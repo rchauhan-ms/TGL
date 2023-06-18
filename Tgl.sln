@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgl.API", "Tgl.API\Tgl.API.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgl.Shared", "Tgl.Shared\Tgl.Shared.csproj", "{00967AFB-3A6F-43FE-9D44-22D01F6E3562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tgl.SharedComponentLibrary", "Tgl.SharedComponentLibrary\Tgl.SharedComponentLibrary.csproj", "{473BF1AB-16ED-48BF-8CCD-84415E050E7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgl.SharedComponentLibrary", "Tgl.SharedComponentLibrary\Tgl.SharedComponentLibrary.csproj", "{473BF1AB-16ED-48BF-8CCD-84415E050E7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

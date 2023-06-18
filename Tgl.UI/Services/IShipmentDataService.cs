@@ -4,7 +4,7 @@ namespace Tgl.UI.Services
 {
     public interface IShipmentDataService
     {
-        Task<IEnumerable<ShipmentSummary>> GetAll();
-        Task<IEnumerable<ShipmentSummary>> GetFilteredShipments(UserFilter userFilter);
+        Task<IEnumerable<ShipmentSummary>> GetAllAsync();
+        Task<IEnumerable<ShipmentSummary>> GetFilteredShipmentsAsync(UserFilter userFilter);
     }
 }

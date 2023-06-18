@@ -2,9 +2,9 @@
 
 <PageTitle>Shipments</PageTitle>
 
-<h1>Shipment Summary</h1>
+<h4 class="fw-bold">User Preferences</h4>
 
-<Filter OnFilterSelected="@ApplyFilterOnSummary" ShipmentFilter="@ShipmentFilterViewModel"></Filter>
+<CheckboxFilter OnFilterSelected="@ApplyFilterOnSummary" ShipmentFilterViewModel="@ShipmentFilterViewModel"></CheckboxFilter>
 
 <Summary ShipmentSummaries="@ShipmentSummaries"></Summary>
 

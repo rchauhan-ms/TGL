@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
@@ -15,11 +15,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Tgl.SharedComponentLibrary\Tgl.SharedComponentLibrary.csproj" />
     <ProjectReference Include="..\Tgl.Shared\Tgl.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Components\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

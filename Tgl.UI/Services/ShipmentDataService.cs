@@ -13,7 +13,7 @@ namespace Tgl.UI.Services
             _httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<ShipmentSummary>> GetAll()
+        public async Task<IEnumerable<ShipmentSummary>> GetAllAsync()
         {
             var shipmentSummaries = await JsonSerializer.DeserializeAsync<IEnumerable<ShipmentSummary>>(
                 await _httpClient.GetStreamAsync($"api/shipment"), new JsonSerializerOptions() { PropertyNameCaseInsensitive = true }
@@ -22,7 +22,7 @@ namespace Tgl.UI.Services
             return shipmentSummaries!;
         }
 
-        public async Task<IEnumerable<ShipmentSummary>> GetFilteredShipments(UserFilter userFilter)
+        public async Task<IEnumerable<ShipmentSummary>> GetFilteredShipmentsAsync(UserFilter userFilter)
         {
             IEnumerable<ShipmentSummary>? shipmentSummary = null;
 

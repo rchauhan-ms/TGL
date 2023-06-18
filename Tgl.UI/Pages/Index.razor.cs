@@ -13,25 +13,47 @@ namespace Tgl.UI.Pages
         [Inject]
         public IUserFilterDataService UserFilterDataService { get; set; }
 
-        async Task ApplyFilterOnSummary(UserFilter userFilter)
+        async Task ApplyFilterOnSummary(ShipmentFilterViewModel shipmentFilter)
         {
-            //save filters to json file
-            var isFilterSaved = (await UserFilterDataService.SaveUserFilterAsync(userFilter));
+            UpdateUserFilterOnCheckbox(shipmentFilter);
 
-            //TODO: Filter the list of summaries based on the filters selected...
-            var filteredShipments = (await ShipmentDataService.GetFilteredShipments(userFilter)).ToList();
-            ShipmentSummaries = filteredShipments;
+            var isFilterSaved = (await UserFilterDataService.SaveUserFilterAsync(shipmentFilter.UserFilter));
+
+            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(shipmentFilter.UserFilter))
+                                .ToList();
         }
 
-        public List<ShipmentSummary> ShipmentSummaries { get; set; } = new();
-        private ShipmentFilterViewModel ShipmentFilterViewModel = new();
-        public UserFilter UserFilter { get; set; } = new();
+        private void UpdateUserFilterOnCheckbox(ShipmentFilterViewModel shipmentFilter)
+        {
+            foreach (var filter in shipmentFilter.CheckboxFilters)
+            {
+                if (filter.Value == "FromLocationComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.FromLocationSelected = new int[] { };
+                }
+                else if (filter.Value == "ToLocationComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.ToLocationSelected = new int[] { };
+                }
+                else if (filter.Value == "DeliveryDatePeriodComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.DeliveryPeriodSelected = new ();
+                }
+                else if (filter.Value == "ShipmentCostComponent" && !filter.IsFilterChecked)
+                {
+                    shipmentFilter.UserFilter.ShipmentCostSelected.Amount = 0;
+                }
+            }
+        }
+        private List<ShipmentSummary> ShipmentSummaries { get; set; } = new();
+        private ShipmentFilterViewModel ShipmentFilterViewModel { get; set; } = new();
+        private UserFilter UserFilter { get; set; } = new();
         protected async override Task OnInitializedAsync()
         {
             //Get UserFilters
-            UserFilter = await UserFilterDataService.GetUserFilterAsync(); 
+            UserFilter = await UserFilterDataService.GetUserFilterAsync();
+            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(UserFilter)).ToList();
 
-            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipments(UserFilter)).ToList();
             ShipmentFilterViewModel = MockDataService.ShipmentFilterViewModel(UserFilter);
         }
     }

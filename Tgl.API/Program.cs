@@ -1,5 +1,5 @@
 using Tgl.API.JsonParser;
-using Tgl.API.Models;
+using Tgl.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

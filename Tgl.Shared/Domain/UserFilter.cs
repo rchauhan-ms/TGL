@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tgl.Shared.Domain
+﻿namespace Tgl.Shared.Domain
 {
     public class UserFilter
     {
-        public string[] FromLocationSelected { get; set; } = new string[] { };
-        public string[] ToLocationSelected { get; set; } = new string[] { };
-        public string ShipmentCostSelected { get; set; } = string.Empty;
+        public int[] FromLocationSelected { get; set; } = new int[] { };
+        public int[] ToLocationSelected { get; set; } = new int[] { };
+        public ShipmentCost ShipmentCostSelected { get; set; } = new();
         public DeliveryPeriod DeliveryPeriodSelected { get; set; } = new();
     }
+
 }

@@ -22,12 +22,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Blazor/Tgl/Tgl.UI/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[C:/Projects/Blazor/Tgl/Tgl.UI/Components/Summary.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdW1tYXJ5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Blazor/Tgl/Tgl.UI/Shared/Summary.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1bW1hcnkucmF6b3I=
+[C:/Projects/Blazor/Tgl/Tgl.UI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/Blazor/Tgl/Tgl.UI/_Imports.razor]

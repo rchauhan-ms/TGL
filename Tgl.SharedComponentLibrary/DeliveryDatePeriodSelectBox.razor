@@ -1,0 +1,35 @@
+﻿@using BlazorDateRangePicker
+@using Tgl.Shared.Domain
+
+<li class="list-group-item">
+    <label class="label fw-bold fs-6">Delivery Date Period</label>
+    <DateRangePicker OnRangeSelect="OnRangeSelect" 
+                     class="form-control" 
+                     placeholder="Select dates..." />
+</li>
+
+@code {
+
+    [Parameter]
+    public DeliveryPeriod DeliveryDatePeriod { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<DeliveryPeriod> OnDeliveryPeriodSelected { get; set; }
+
+    public void OnRangeSelect(DateRange range)
+        {
+            if (range != null)
+            {
+                var deliveryPeriodSelected = DeliveryDatePeriod;
+                var startDateTime = range.Start.DateTime;
+                var endDateTime = range.End.DateTime;
+
+                deliveryPeriodSelected.StartDate = startDateTime;
+                deliveryPeriodSelected.EndDate = endDateTime;
+                deliveryPeriodSelected.StartDateText = range.Start.Date.ToString("dd MMM yyyy");
+                deliveryPeriodSelected.EndDateText = range.End.Date.ToString("dd MMM yyyy");
+
+                OnDeliveryPeriodSelected.InvokeAsync(deliveryPeriodSelected);
+            }
+        }
+}

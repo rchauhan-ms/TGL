@@ -1,0 +1,50 @@
+﻿@using Tgl.Shared.Domain
+<h4>Shipment Summaries</h4>
+
+@foreach (var item in ShipmentSummaries)
+{
+    <div class="card mb-4 bg-light border-2">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-2">
+                    <h5>@item.ShippingId </h5>
+                    <span class="fs-6 fw-lighter small">Shipping Cost: @item.ShippingCost.ToString("C")</span>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-5 small">
+                            @item.ShipmentFilter.FromLocation.Name<br />
+                            @item.ShipmentFilter.FromDate
+                        </div>
+                        <div class="col-2 text-center">to</div>
+                        <div class="col-5 small">
+                            @item.ShipmentFilter.ToLocation.Name<br />
+                            @item.ShipmentFilter.ToDate
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <span class="badge bg-primary small">@item.ActionMessage</span>
+                </div>
+                <div class="col-3">
+                    <span class="fw-bold small">@item.ShippingCompany</span>
+                </div>
+                <div class="col-2 ">
+                    <span class="small fw-bold text-muted">@string.Join(",", @item.TrackingNumbers)</span>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                @foreach (var status in @item.DeliveryStatuses)
+                {
+                    <div class="col-2 small">
+                        <span class="badge @(status.Value == @DeliveryStatusEnum.Completed ?"bg-success"
+                               : @status.Value == @DeliveryStatusEnum.Current?"bg-danger"
+                               : "bg-dark")">@status.Key</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+

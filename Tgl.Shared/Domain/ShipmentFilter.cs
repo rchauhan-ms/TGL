@@ -6,5 +6,6 @@
         public City? ToLocation { get; set; }
         public string? FromDate { get; set; }
         public string? ToDate { get; set; }
+        public ShipmentCost? ShipmentCost { get; set; }
     }
 }

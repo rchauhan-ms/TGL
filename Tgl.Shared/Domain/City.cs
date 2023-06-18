@@ -10,5 +10,6 @@ namespace Tgl.Shared.Domain
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string BindTo { get; set; }
     }
 }
