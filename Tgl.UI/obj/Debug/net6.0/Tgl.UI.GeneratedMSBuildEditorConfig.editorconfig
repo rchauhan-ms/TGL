@@ -5,53 +5,55 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Tgl.UI
 build_property.RootNamespace = Tgl.UI
-build_property.ProjectDir = C:\Projects\ThinkGlobalLogistics\Tgl.UI\
+build_property.ProjectDir = C:\Projects\TGLFinal\Tgl.UI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projects\ThinkGlobalLogistics\Tgl.UI
+build_property.MSBuildProjectDirectory = C:\Projects\TGLFinal\Tgl.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/App.razor]
+[C:/Projects/TGLFinal/Tgl.UI/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/components/DeliveryDatePeriodComponent.razor]
+[C:/Projects/TGLFinal/Tgl.UI/components/DeliveryDatePeriodComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xEZWxpdmVyeURhdGVQZXJpb2RDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/components/FromLocationComponent.razor]
+[C:/Projects/TGLFinal/Tgl.UI/components/FromLocationComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xGcm9tTG9jYXRpb25Db21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/components/ShipmentCostComponent.razor]
+[C:/Projects/TGLFinal/Tgl.UI/components/ShipmentCostComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xTaGlwbWVudENvc3RDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/components/ToLocationComponent.razor]
+[C:/Projects/TGLFinal/Tgl.UI/components/ToLocationComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xUb0xvY2F0aW9uQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/Pages/Index.razor]
+[C:/Projects/TGLFinal/Tgl.UI/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/Shared/Summary.razor]
+[C:/Projects/TGLFinal/Tgl.UI/Shared/Summary.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1bW1hcnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/_Imports.razor]
+[C:/Projects/TGLFinal/Tgl.UI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/Shared/MainLayout.razor]
+[C:/Projects/TGLFinal/Tgl.UI/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-lvdqiy7kjj
 
-[C:/Projects/ThinkGlobalLogistics/Tgl.UI/Shared/NavMenu.razor]
+[C:/Projects/TGLFinal/Tgl.UI/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-s8q6wrtcu8

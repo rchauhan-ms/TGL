@@ -59,15 +59,17 @@
             @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "ShipmentCostComponent" && x.IsFilterChecked))
             {
                 <li class="list-group-item">
-                    @*<ShipmentCostMultiSelect OnShipmentCostSelected="AddShipmentCostSelected"></ShipmentCostMultiSelect>*@
                     <label class="label  fw-bold fs-6">Shipment Cost</label>
-                    <select @bind="ShipmentFilterViewModel.UserFilter.ShipmentCostSelected" class="form-control" placeholder="Select shipment cost">
+                    <ShipmentCostMultiSelect SelectedShipmentCostId="@ShipmentFilterViewModel.UserFilter.ShipmentCostSelected.Id" 
+                        OnShipmentCostSelection="@AddShipmentCostSelected"></ShipmentCostMultiSelect>
+                    
+                    @*<select @bind="ShipmentFilterViewModel.UserFilter.ShipmentCostSelected.Id" class="form-control" placeholder="Select shipment cost">
                         
                         @foreach (var shipmentCost in MockDataService.ShipmentCostsDropdownList)
                         {
-                            <option value="@shipmentCost.Id">$"{@shipmentCost.RelationalOperator} {@shipmentCost.Amount}"</option>
+                            <option value="@shipmentCost.Id">@shipmentCost.RelationalOperator @shipmentCost.Amount</option>
                         }
-                    </select>
+                    </select>*@
                 </li>
             }
 

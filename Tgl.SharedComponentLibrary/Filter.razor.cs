@@ -1,5 +1,6 @@
 ﻿using BlazorDateRangePicker;
 using Microsoft.AspNetCore.Components;
+using Tgl.Shared.Domain;
 using Tgl.Shared.Models;
 
 namespace Tgl.SharedComponentLibrary
@@ -12,11 +13,17 @@ namespace Tgl.SharedComponentLibrary
         [Parameter]
         public EventCallback<ShipmentFilterViewModel> OnFilterSelected { get; set; }
 
+
+        protected void AddShipmentCostSelected(ShipmentCost shipmentCost)
+        {
+            ShipmentFilterViewModel!.UserFilter.ShipmentCostSelected = shipmentCost;
+        }
+
         public void OnRangeSelect(DateRange range)
         {
             if (range != null)
             {
-                var deliveryPeriodSelected = ShipmentFilterViewModel.UserFilter.DeliveryPeriodSelected;
+                var deliveryPeriodSelected = ShipmentFilterViewModel!.UserFilter.DeliveryPeriodSelected;
                 var startDateTime = range.Start.DateTime;
                 var endDateTime = range.End.DateTime;
 

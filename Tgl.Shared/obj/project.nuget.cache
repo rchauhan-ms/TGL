@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6fHOOC20xfdijMwOUvZiQnCVwCjY1N63SeObGH4GOFIe7Y59rvNxG81Ix6m8epdiKeE6erVStiqrqwqAQf6Fcg==",
+  "dgSpecHash": "R+pQZTeR5MnCT0UyPgPpUvcIJwg27JSR480j63DQC/7ETeNn8I05RgZGAxbFVE0MdpOG95aL9V4GUmMSRci3tg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\ThinkGlobalLogistics\\Tgl.Shared\\Tgl.Shared.csproj",
+  "projectFilePath": "C:\\Projects\\TGLFinal\\Tgl.Shared\\Tgl.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

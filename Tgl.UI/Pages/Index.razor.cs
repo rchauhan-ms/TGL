@@ -20,7 +20,8 @@ namespace Tgl.UI.Pages
             var isFilterSaved = (await UserFilterDataService.SaveUserFilterAsync(shipmentFilter.UserFilter));
 
             //TODO: Filter the list of summaries based on the filters selected...
-            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(shipmentFilter.UserFilter)).ToList();
+            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(shipmentFilter.UserFilter))
+                                .ToList();
         }
 
         private void UpdateUserFilterOnCheckbox(ShipmentFilterViewModel shipmentFilter)
@@ -51,11 +52,10 @@ namespace Tgl.UI.Pages
         protected async override Task OnInitializedAsync()
         {
             //Get UserFilters
-            //UserFilter = await UserFilterDataService.GetUserFilterAsync(); 
-            //ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(UserFilter)).ToList();
+            UserFilter = await UserFilterDataService.GetUserFilterAsync();
+            ShipmentSummaries = (await ShipmentDataService.GetFilteredShipmentsAsync(UserFilter)).ToList();
 
-            ShipmentSummaries = (await ShipmentDataService.GetAllAsync()).ToList();
-            ShipmentFilterViewModel = MockDataService.ShipmentFilterViewModel();
+            ShipmentFilterViewModel = MockDataService.ShipmentFilterViewModel(UserFilter);
         }
     }
 }
