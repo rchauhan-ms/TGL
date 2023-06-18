@@ -4,7 +4,7 @@ namespace Tgl.Shared.Models
 {
     public class MockDataService
     {
-        public static ShipmentFilterViewModel ShipmentFilterViewModel(UserFilter filter)
+        public static ShipmentFilterViewModel ShipmentFilterViewModel(UserFilter filter = null)
         {
             var shipmentFilterViewModel = new ShipmentFilterViewModel();
 
@@ -16,26 +16,29 @@ namespace Tgl.Shared.Models
                 { new CheckboxFilter { Id = 4, Name = "Shipment Costs", Value = "ShipmentCostComponent", IsFilterChecked = false } },
             };
             
-            if(filter.FromLocationSelected.Length > 0)
-            {
-                checkboxFilters[0].IsFilterChecked = true;
+            if(filter != null) {
+                if (filter.FromLocationSelected.Length > 0)
+                {
+                    checkboxFilters[0].IsFilterChecked = true;
+                }
+                if (filter.ToLocationSelected.Length > 0)
+                {
+                    checkboxFilters[1].IsFilterChecked = true;
+                }
+                if (filter.DeliveryPeriodSelected.StartDateText.Length > 0 || filter.DeliveryPeriodSelected.EndDateText.Length > 0)
+                {
+                    checkboxFilters[2].IsFilterChecked = true;
+                }
+                if (filter.ShipmentCostSelected.Amount > 0.00)
+                {
+                    checkboxFilters[3].IsFilterChecked = true;
+                }
             }
-            if (filter.ToLocationSelected.Length > 0)
-            {
-                checkboxFilters[1].IsFilterChecked = true;
-            }
-            if (filter.DeliveryPeriodSelected.StartDateText.Length > 0 || filter.DeliveryPeriodSelected.EndDateText.Length > 0)
-            {
-                checkboxFilters[2].IsFilterChecked = true;
-            }
-            if (!string.IsNullOrEmpty(filter.ShipmentCostSelected))
-            {
-                checkboxFilters[3].IsFilterChecked = true;
-            }
+            
 
             shipmentFilterViewModel.CheckboxFilters = checkboxFilters;
 
-            shipmentFilterViewModel.UserFilter = filter;
+            shipmentFilterViewModel.UserFilter = filter?? new UserFilter();
 
             return shipmentFilterViewModel;
         }
@@ -93,10 +96,10 @@ namespace Tgl.Shared.Models
             {
                 return new List<ShipmentCost>()
                 {
-                    new ShipmentCost{ Id = 1, AmountText= "<2000.00", Amount = 2000.00},
-                    new ShipmentCost{ Id = 2, AmountText= "<5000.00", Amount = 5000.00},
-                    new ShipmentCost{ Id = 3, AmountText= "<10000.00", Amount = 10000.00 },
-                    new ShipmentCost{ Id = 4, AmountText= ">10000.00", Amount = 10000.00 }
+                    new ShipmentCost{ Id = 1, Amount = 2000.00, RelationalOperator = "<"},
+                    new ShipmentCost{ Id = 2, Amount = 5000.00, RelationalOperator = "<"},
+                    new ShipmentCost{ Id = 3, Amount = 10000.00 , RelationalOperator = "<"},
+                    new ShipmentCost{ Id = 4, Amount = 10000.00, RelationalOperator = ">" }
                 };
             }
         }

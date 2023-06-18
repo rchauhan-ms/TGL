@@ -2,9 +2,9 @@
 {
     public class UserFilter
     {
-        public string[] FromLocationSelected { get; set; } = new string[] { };
-        public string[] ToLocationSelected { get; set; } = new string[] { };
-        public string ShipmentCostSelected { get; set; } = string.Empty;
+        public int[] FromLocationSelected { get; set; } = new int[] { };
+        public int[] ToLocationSelected { get; set; } = new int[] { };
+        public ShipmentCost ShipmentCostSelected { get; set; } = new();
         public DeliveryPeriod DeliveryPeriodSelected { get; set; } = new();
     }
 

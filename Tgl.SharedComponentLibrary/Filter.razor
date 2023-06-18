@@ -14,7 +14,7 @@
                                type="checkbox"
                                id="@filter.Id"
                                value="@filter.IsFilterChecked"
-                                @bind="@filter.IsFilterChecked" />
+                        @bind="@filter.IsFilterChecked" />
                         <label class="form-check-label" for="@filter.Id">@filter.Name</label>
                     </div>
                 </li>
@@ -24,8 +24,8 @@
     <div class="col-offset-2 col-7">
         <ul class="list-group list-group-flush">
             @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "FromLocationComponent" && x.IsFilterChecked))
-        {
-            <li class="list-group-item">
+            {
+                <li class="list-group-item">
                     @*<FromLocationMultiSelect OnFromLocationSelected="AddFromLocationSelected"></FromLocationMultiSelect>*@
                     <label class="label fw-bold fs-6">From Location</label>
                     <select multiple @bind="ShipmentFilterViewModel.UserFilter.FromLocationSelected" class="form-select">
@@ -35,10 +35,10 @@
                         }
                     </select>
                 </li>
-        }
+            }
             @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "ToLocationComponent" && x.IsFilterChecked))
-        {
-            <li class="list-group-item">
+            {
+                <li class="list-group-item">
                     @*<ToLocationMultiSelect OnToLocationSelected="AddToLocationSelected"></ToLocationMultiSelect>*@
                     <label class="label fw-bold fs-6">To Destination</label>
                     <select multiple @bind="ShipmentFilterViewModel.UserFilter.ToLocationSelected" class="form-select">
@@ -48,34 +48,35 @@
                         }
                     </select>
                 </li>
-        }
+            }
             @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "DeliveryDatePeriodComponent" && x.IsFilterChecked))
-        {
+            {
                 <li class="list-group-item">
                     <label class="label fw-bold fs-6">Delivery Date Period</label>
                     <DateRangePicker OnRangeSelect="OnRangeSelect" class="form-control" placeholder="Select dates..." />
                 </li>
-        }
+            }
             @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.Value == "ShipmentCostComponent" && x.IsFilterChecked))
-        {
-            <li class="list-group-item">
+            {
+                <li class="list-group-item">
                     @*<ShipmentCostMultiSelect OnShipmentCostSelected="AddShipmentCostSelected"></ShipmentCostMultiSelect>*@
                     <label class="label  fw-bold fs-6">Shipment Cost</label>
                     <select @bind="ShipmentFilterViewModel.UserFilter.ShipmentCostSelected" class="form-control" placeholder="Select shipment cost">
+                        
                         @foreach (var shipmentCost in MockDataService.ShipmentCostsDropdownList)
                         {
-                            <option value="@shipmentCost.Id">@shipmentCost.AmountText</option>
+                            <option value="@shipmentCost.Id">$"{@shipmentCost.RelationalOperator} {@shipmentCost.Amount}"</option>
                         }
                     </select>
                 </li>
-        }
+            }
 
             @if (ShipmentFilterViewModel.CheckboxFilters.Any(x => x.IsFilterChecked == true))
-        {
-            <li class="list-group-item">
+            {
+                <li class="list-group-item">
                     <button type="button" @onclick="ApplyFilter" class="btn btn-success">Apply Filters</button>
-            </li>
-        }
+                </li>
+            }
         </ul>
     </div>
 </div>

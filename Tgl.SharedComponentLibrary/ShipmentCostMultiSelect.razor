@@ -3,7 +3,7 @@
      <select @onchange="OnShipmentCostSelect" class="form-control">
                 @foreach (var shipmentCost in MockDataService.ShipmentCostsDropdownList)
                 {
-                    <option value="@shipmentCost.Id">@shipmentCost.AmountText</option>
+                    <option value="@shipmentCost.Id">@shipmentCost.Amount</option>
                 }
         </select>
 

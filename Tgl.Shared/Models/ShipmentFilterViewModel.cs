@@ -4,7 +4,6 @@ namespace Tgl.Shared.Models
 {
     public class ShipmentFilterViewModel
     {
-        public Dictionary<string, string> Filters { get; set; }
         public List<CheckboxFilter> CheckboxFilters { get; set; } = new();
         public UserFilter UserFilter { get; set; }
     }

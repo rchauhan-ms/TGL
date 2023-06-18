@@ -10,6 +10,6 @@ namespace Tgl.Shared.Domain
     {
         public int Id { get; set; }
         public double Amount { get; set; }
-        public string? AmountText { get; set; }
+        public string? RelationalOperator { get; set; }
     }
 }
