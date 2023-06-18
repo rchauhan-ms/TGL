@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Tgl.API.Models;
+using Tgl.API.Repositories;
 using Tgl.Shared.Domain;
 
 namespace Tgl.API.Controllers

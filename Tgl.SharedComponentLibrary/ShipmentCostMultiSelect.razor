@@ -1,10 +1,10 @@
 ﻿@using Tgl.Shared.Domain
 @using Tgl.Shared.Models
 
-     <select value="@SelectedShipmentCostId" @onchange="OnShipmentCostSelectChange" class="form-control">
-                @foreach (var shipmentCost in MockDataService.ShipmentCostsDropdownList)
-                {
-                    <option value="@shipmentCost.Id">@shipmentCost.RelationalOperator @shipmentCost.Amount</option>
-                }
-        </select>
+<select value="@SelectedShipmentCostId" @onchange="OnShipmentCostSelectChange" class="form-control">
+    @foreach (var shipmentCost in ShipmentCostList)
+    {
+        <option value="@shipmentCost.Id">@shipmentCost.RelationalOperator @shipmentCost.Amount</option>
+    }
+</select>
 

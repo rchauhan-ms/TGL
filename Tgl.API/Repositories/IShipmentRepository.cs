@@ -1,6 +1,6 @@
 ﻿using Tgl.Shared.Domain;
 
-namespace Tgl.API.Models
+namespace Tgl.API.Repositories
 {
     public interface IShipmentRepository
     {

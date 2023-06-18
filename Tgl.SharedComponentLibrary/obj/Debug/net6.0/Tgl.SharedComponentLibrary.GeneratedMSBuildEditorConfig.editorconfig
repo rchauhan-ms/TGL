@@ -5,32 +5,33 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = Tgl.SharedComponentLibrary
 build_property.RootNamespace = Tgl.SharedComponentLibrary
-build_property.ProjectDir = C:\Projects\TGLFinal\Tgl.SharedComponentLibrary\
+build_property.ProjectDir = C:\Projects\TGL\Tgl.SharedComponentLibrary\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projects\TGLFinal\Tgl.SharedComponentLibrary
+build_property.MSBuildProjectDirectory = C:\Projects\TGL\Tgl.SharedComponentLibrary
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Projects/TGLFinal/Tgl.SharedComponentLibrary/Filter.razor]
+[C:/Projects/TGL/Tgl.SharedComponentLibrary/Filter.razor]
 build_metadata.AdditionalFiles.TargetPath = RmlsdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/TGLFinal/Tgl.SharedComponentLibrary/FromLocationMultiSelect.razor]
+[C:/Projects/TGL/Tgl.SharedComponentLibrary/FromLocationMultiSelect.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbUxvY2F0aW9uTXVsdGlTZWxlY3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/TGLFinal/Tgl.SharedComponentLibrary/ShipmentCostMultiSelect.razor]
+[C:/Projects/TGL/Tgl.SharedComponentLibrary/ShipmentCostMultiSelect.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hpcG1lbnRDb3N0TXVsdGlTZWxlY3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/TGLFinal/Tgl.SharedComponentLibrary/ToLocationMultiSelect.razor]
+[C:/Projects/TGL/Tgl.SharedComponentLibrary/ToLocationMultiSelect.razor]
 build_metadata.AdditionalFiles.TargetPath = VG9Mb2NhdGlvbk11bHRpU2VsZWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/TGLFinal/Tgl.SharedComponentLibrary/_Imports.razor]
+[C:/Projects/TGL/Tgl.SharedComponentLibrary/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

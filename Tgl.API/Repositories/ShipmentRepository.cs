@@ -2,7 +2,7 @@
 using Tgl.API.Data;
 using Tgl.Shared.Domain;
 
-namespace Tgl.API.Models
+namespace Tgl.API.Repositories
 {
     public class ShipmentRepository : IShipmentRepository
     {
@@ -15,15 +15,15 @@ namespace Tgl.API.Models
         {
             var summaries = await ShipmentDataStore.ShipmentSummaries();
 
-            //TODO: Filters are not working as expected | need more time to look into it
+            
+            //If filter.ToLocationSelected or filter.FromLocationSelected or filter.ShipmentCostSelected empty then 
+            //consider loading everything corresponding to each else apply filter
             var result = summaries.Where(x => filter.FromLocationSelected.Contains(x.ShipmentFilter.FromLocation.Id)
-                                         && filter.ToLocationSelected.Contains(x.ShipmentFilter.ToLocation.Id)
-                                         && ShipmentCostComparisonFilter(filter.ShipmentCostSelected, x.ShippingCost))
-                    .ToList();
+                                   && filter.ToLocationSelected.Contains(x.ShipmentFilter.ToLocation.Id)
+                                   && ShipmentCostComparisonFilter(filter.ShipmentCostSelected, x.ShippingCost))
+                                  .ToList();
 
             return result;
-
-            //return await ShipmentDataStore.ShipmentSummaries();
         }
 
         public static bool ShipmentCostComparisonFilter(ShipmentCost x, double y)

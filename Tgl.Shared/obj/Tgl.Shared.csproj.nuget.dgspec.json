@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\TGLFinal\\Tgl.Shared\\Tgl.Shared.csproj": {}
+    "C:\\Projects\\TGL\\Tgl.Shared\\Tgl.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\TGLFinal\\Tgl.Shared\\Tgl.Shared.csproj": {
+    "C:\\Projects\\TGL\\Tgl.Shared\\Tgl.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\TGLFinal\\Tgl.Shared\\Tgl.Shared.csproj",
+        "projectUniqueName": "C:\\Projects\\TGL\\Tgl.Shared\\Tgl.Shared.csproj",
         "projectName": "Tgl.Shared",
-        "projectPath": "C:\\Projects\\TGLFinal\\Tgl.Shared\\Tgl.Shared.csproj",
+        "projectPath": "C:\\Projects\\TGL\\Tgl.Shared\\Tgl.Shared.csproj",
         "packagesPath": "C:\\Users\\chauh\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\TGLFinal\\Tgl.Shared\\obj\\",
+        "outputPath": "C:\\Projects\\TGL\\Tgl.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\chauh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -45,7 +48,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

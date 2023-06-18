@@ -21,5 +21,13 @@ namespace Tgl.SharedComponentLibrary
             
             await OnShipmentCostSelection.InvokeAsync(selectedShipmentCost);
         }
+
+        private List<ShipmentCost> ShipmentCostList { get; set; }
+
+        protected override Task OnInitializedAsync()
+        {
+            this.ShipmentCostList = MockDataService.ShipmentCostsDropdownList;
+            return base.OnInitializedAsync();
+        }
     }
 }

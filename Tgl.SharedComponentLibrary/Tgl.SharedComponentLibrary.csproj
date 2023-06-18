@@ -6,10 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="CheckboxSelector.razor" />
-  </ItemGroup>
-
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
@@ -26,18 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tgl.Shared\Tgl.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="CheckboxSelector.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="CheckboxSelector.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="CheckboxSelector.razor" />
   </ItemGroup>
 
 </Project>

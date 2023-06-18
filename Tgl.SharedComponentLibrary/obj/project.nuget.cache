@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+OpPBImTYZuQSwgvRWDw5b2oMIpHrlXOw7xAKa+n4U+QbnoXdjKIuVI2peo38Czz3kK7uqNN/MjXl3d79R8kHQ==",
+  "dgSpecHash": "PxNFaHsolcQy1plpK03uEEYnqySprKyc3VCAf4uDrZd+xW7+iIjp83pIHZKfW6uEqDfJfWup3HfuWC2QFCNU+A==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\TGLFinal\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj",
+  "projectFilePath": "C:\\Projects\\TGL\\Tgl.SharedComponentLibrary\\Tgl.SharedComponentLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chauh\\.nuget\\packages\\blazordaterangepicker\\4.3.0\\blazordaterangepicker.4.3.0.nupkg.sha512",
     "C:\\Users\\chauh\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.3\\microsoft.aspnetcore.authorization.6.0.3.nupkg.sha512",

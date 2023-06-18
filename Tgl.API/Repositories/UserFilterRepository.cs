@@ -1,7 +1,7 @@
 ﻿using Tgl.API.JsonParser;
 using Tgl.Shared.Domain;
 
-namespace Tgl.API.Models
+namespace Tgl.API.Repositories
 {
     public class UserFilterRepository : IUserFilterRepository
     {

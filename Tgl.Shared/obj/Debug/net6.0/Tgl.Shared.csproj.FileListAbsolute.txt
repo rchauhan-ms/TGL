@@ -34,3 +34,15 @@ C:\Projects\TGLFinal\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.dll
 C:\Projects\TGLFinal\Tgl.Shared\obj\Debug\net6.0\refint\Tgl.Shared.dll
 C:\Projects\TGLFinal\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.pdb
 C:\Projects\TGLFinal\Tgl.Shared\obj\Debug\net6.0\ref\Tgl.Shared.dll
+C:\Projects\TGL\Tgl.Shared\bin\Debug\net6.0\Tgl.Shared.deps.json
+C:\Projects\TGL\Tgl.Shared\bin\Debug\net6.0\Tgl.Shared.dll
+C:\Projects\TGL\Tgl.Shared\bin\Debug\net6.0\Tgl.Shared.pdb
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.csproj.AssemblyReference.cache
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.AssemblyInfoInputs.cache
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.AssemblyInfo.cs
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.dll
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\refint\Tgl.Shared.dll
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\Tgl.Shared.pdb
+C:\Projects\TGL\Tgl.Shared\obj\Debug\net6.0\ref\Tgl.Shared.dll

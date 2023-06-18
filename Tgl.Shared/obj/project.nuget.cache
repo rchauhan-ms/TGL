@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R+pQZTeR5MnCT0UyPgPpUvcIJwg27JSR480j63DQC/7ETeNn8I05RgZGAxbFVE0MdpOG95aL9V4GUmMSRci3tg==",
+  "dgSpecHash": "F/zGXphxuwgi/T1nCzi9uPKi6AvwHupcd5dugCaBA1vSLK0hGv96E/BOBVZ/4DRFSyT5blWYTLKFUEHiL+nVKw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\TGLFinal\\Tgl.Shared\\Tgl.Shared.csproj",
+  "projectFilePath": "C:\\Projects\\TGL\\Tgl.Shared\\Tgl.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
