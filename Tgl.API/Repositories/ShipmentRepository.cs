@@ -15,15 +15,13 @@ namespace Tgl.API.Repositories
         {
             var summaries = await ShipmentDataStore.ShipmentSummaries();
 
-            
-            //If filter.ToLocationSelected or filter.FromLocationSelected or filter.ShipmentCostSelected empty then 
-            //consider loading everything corresponding to each else apply filter
-            var result = summaries.Where(x => filter.FromLocationSelected.Contains(x.ShipmentFilter.FromLocation.Id)
-                                   && filter.ToLocationSelected.Contains(x.ShipmentFilter.ToLocation.Id)
-                                   && ShipmentCostComparisonFilter(filter.ShipmentCostSelected, x.ShippingCost))
-                                  .ToList();
+            var filteredSummaries = summaries.Where(x =>
+                (filter.FromLocationSelected.Length == 0 || filter.FromLocationSelected.Contains(x.ShipmentFilter.FromLocation.Id)) &&
+                (filter.ToLocationSelected.Length == 0 || filter.ToLocationSelected.Contains(x.ShipmentFilter.ToLocation.Id)) &&
+                (filter.ShipmentCostSelected.Amount <= 0 || ShipmentCostComparisonFilter(filter.ShipmentCostSelected, x.ShippingCost))
+            );
 
-            return result;
+            return filteredSummaries.ToList();
         }
 
         public static bool ShipmentCostComparisonFilter(ShipmentCost x, double y)
@@ -33,7 +31,7 @@ namespace Tgl.API.Repositories
         }
 
         // Helper method to convert string operator to a delegate
-        public static Func<double,double,bool> GetComparisonOperator(string operatorString)
+        public static Func<double, double, bool> GetComparisonOperator(string operatorString)
         {
             switch (operatorString)
             {
