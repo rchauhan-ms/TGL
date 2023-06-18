@@ -62,14 +62,6 @@
                     <label class="label  fw-bold fs-6">Shipment Cost</label>
                     <ShipmentCostMultiSelect SelectedShipmentCostId="@ShipmentFilterViewModel.UserFilter.ShipmentCostSelected.Id" 
                         OnShipmentCostSelection="@AddShipmentCostSelected"></ShipmentCostMultiSelect>
-                    
-                    @*<select @bind="ShipmentFilterViewModel.UserFilter.ShipmentCostSelected.Id" class="form-control" placeholder="Select shipment cost">
-                        
-                        @foreach (var shipmentCost in MockDataService.ShipmentCostsDropdownList)
-                        {
-                            <option value="@shipmentCost.Id">@shipmentCost.RelationalOperator @shipmentCost.Amount</option>
-                        }
-                    </select>*@
                 </li>
             }
 

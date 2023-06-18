@@ -13,20 +13,17 @@ namespace Tgl.API.Models
 
         public async Task<IEnumerable<ShipmentSummary>> GetFilteredShipmentsAsync(UserFilter filter)
         {
-
             var summaries = await ShipmentDataStore.ShipmentSummaries();
-            //TODO: Implement rest of the filters..
-            if (filter.FromLocationSelected.Length > 0)
-            {
-                var result = summaries.Where(x => filter.FromLocationSelected.Contains(x.ShipmentFilter.FromLocation.Id)
+
+            //TODO: Filters are not working as expected | need more time to look into it
+            var result = summaries.Where(x => filter.FromLocationSelected.Contains(x.ShipmentFilter.FromLocation.Id)
                                          && filter.ToLocationSelected.Contains(x.ShipmentFilter.ToLocation.Id)
-                                         && ShipmentCostComparisonFilter(filter.ShipmentCostSelected ,x.ShippingCost))
+                                         && ShipmentCostComparisonFilter(filter.ShipmentCostSelected, x.ShippingCost))
                     .ToList();
 
-                return result;
-            }
+            return result;
 
-            return await ShipmentDataStore.ShipmentSummaries();
+            //return await ShipmentDataStore.ShipmentSummaries();
         }
 
         public static bool ShipmentCostComparisonFilter(ShipmentCost x, double y)

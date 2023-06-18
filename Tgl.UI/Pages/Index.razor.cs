@@ -30,11 +30,11 @@ namespace Tgl.UI.Pages
             {
                 if (filter.Value == "FromLocationComponent" && !filter.IsFilterChecked)
                 {
-                    shipmentFilter.UserFilter.FromLocationSelected = Array.Empty<int>();
+                    shipmentFilter.UserFilter.FromLocationSelected = new int[] { };
                 }
                 else if (filter.Value == "ToLocationComponent" && !filter.IsFilterChecked)
                 {
-                    shipmentFilter.UserFilter.ToLocationSelected = Array.Empty<int>();
+                    shipmentFilter.UserFilter.ToLocationSelected = new int[] { };
                 }
                 else if (filter.Value == "DeliveryDatePeriodComponent" && !filter.IsFilterChecked)
                 {

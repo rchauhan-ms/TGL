@@ -7,7 +7,9 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-2">
-                    <h5>@item.ShippingId</h5>
+                    <h5>@item.ShippingId<br/>
+                        <span class="fw-bold">Shipping Cost: @item.ShippingCost</span>
+                    </h5>
                 </div>
                 <div class="col-3">
                     <div class="row">
@@ -15,7 +17,7 @@
                             @item.ShipmentFilter.FromLocation.Name<br />
                             @item.ShipmentFilter.FromDate
                         </div>
-                        <div class="col-2"></div>
+                        <div class="col-1"></div>
                         <div class="col-5">
                             @item.ShipmentFilter.ToLocation.Name<br />
                             @item.ShipmentFilter.ToDate

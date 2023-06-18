@@ -1,1 +1,1 @@
-{"FromLocationSelected":[],"ToLocationSelected":[],"ShipmentCostSelected":{"Id":3,"Amount":10000,"RelationalOperator":"\u003C"},"DeliveryPeriodSelected":{"StartDate":"0001-01-01T00:00:00","EndDate":"0001-01-01T00:00:00","StartDateText":"","EndDateText":""}}
+{"FromLocationSelected":[2],"ToLocationSelected":[],"ShipmentCostSelected":{"Id":1,"Amount":2000,"RelationalOperator":"\u003C"},"DeliveryPeriodSelected":{"StartDate":"0001-01-01T00:00:00","EndDate":"0001-01-01T00:00:00","StartDateText":"","EndDateText":""}}

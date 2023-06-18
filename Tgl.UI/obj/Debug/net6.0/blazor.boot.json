@@ -199,16 +199,16 @@
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
       "Tgl.Shared.dll": "sha256-\/ix1cfqbjHMDxYo\/gb3VUb2ECY36RH+mPRSaEoJoCDg=",
-      "Tgl.SharedComponentLibrary.dll": "sha256-fSVjlxLzp2syHIdKYvnsy7ij995PNk9PGvP+Ajo0mpc=",
-      "Tgl.UI.dll": "sha256-1Kar9UZd66zTzRfdzyvYT9zJw2eS\/doY1SAlod1ozIw="
+      "Tgl.SharedComponentLibrary.dll": "sha256-KlZI8mqPs5DqitQGCLE552UivKmGH4a7rC9fdNKd0v4=",
+      "Tgl.UI.dll": "sha256-nAH01j6C02J1cB59O+m3OjTJnIpJ0Bjm5y7X3\/yEHCY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Tgl.SharedComponentLibrary.pdb": "sha256-0TlQLhnn\/TQXNZeAHgcFjUczOJMheT4ILIAsiJRAhYc=",
+      "Tgl.SharedComponentLibrary.pdb": "sha256-I1YwrwOED+IKliE0wF8LbKw9tRicbbHhOEdJoAHdOf4=",
       "Tgl.Shared.pdb": "sha256-tZcnCAJD2NppPCr1r29tsvcZFl8u7r93wRvj\/YHJmok=",
-      "Tgl.UI.pdb": "sha256-ed7fDdFr2iKFfCV\/xqO\/iuP\/jlxbJp1vtEQUGZ\/HfEY="
+      "Tgl.UI.pdb": "sha256-8EI95e2fFoWuaXHTQtUBi46U9hOSf+x0\/mqV2Vb0ZRo="
     },
     "runtime": {
       "dotnet.6.0.3.5e75iup1hq.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",
