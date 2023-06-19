@@ -196,3 +196,5 @@ C:\Projects\TGL\Tgl.API\obj\Debug\net6.0\Tgl.API.pdb
 C:\Projects\TGL\Tgl.API\obj\Debug\net6.0\Tgl.API.genruntimeconfig.cache
 C:\Projects\TGL\Tgl.API\obj\Debug\net6.0\ref\Tgl.API.dll
 C:\Projects\Blazor\Tgl\Tgl.API\obj\Debug\net6.0\Tgl.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\Blazor\Tgl\Tgl.API\bin\Debug\net6.0\Tgl.Data.dll
+C:\Projects\Blazor\Tgl\Tgl.API\bin\Debug\net6.0\Tgl.Data.pdb

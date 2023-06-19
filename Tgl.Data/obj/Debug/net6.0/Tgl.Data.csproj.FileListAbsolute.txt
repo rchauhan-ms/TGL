@@ -1,0 +1,15 @@
+C:\Projects\Blazor\Tgl\Tgl.Data\bin\Debug\net6.0\Tgl.Data.deps.json
+C:\Projects\Blazor\Tgl\Tgl.Data\bin\Debug\net6.0\Tgl.Data.dll
+C:\Projects\Blazor\Tgl\Tgl.Data\bin\Debug\net6.0\Tgl.Data.pdb
+C:\Projects\Blazor\Tgl\Tgl.Data\bin\Debug\net6.0\Tgl.Shared.dll
+C:\Projects\Blazor\Tgl\Tgl.Data\bin\Debug\net6.0\Tgl.Shared.pdb
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.csproj.AssemblyReference.cache
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.AssemblyInfoInputs.cache
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.AssemblyInfo.cs
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.csproj.CoreCompileInputs.cache
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.csproj.CopyComplete
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.dll
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\refint\Tgl.Data.dll
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\Tgl.Data.pdb
+C:\Projects\Blazor\Tgl\Tgl.Data\obj\Debug\net6.0\ref\Tgl.Data.dll

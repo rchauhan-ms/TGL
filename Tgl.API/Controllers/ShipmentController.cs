@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Tgl.API.Repositories;
+using Tgl.API.Services;
 using Tgl.Shared.Domain;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,11 +10,11 @@ namespace Tgl.API.Controllers
     [ApiController]
     public class ShipmentController : Controller
     {
-        private readonly IShipmentRepository _shipmentRepository;
-        private readonly ILogger _logger;
-        public ShipmentController(IShipmentRepository shipmentRepository, ILogger<ShipmentController> logger)
+        private readonly IShipmentService _shipmentService;
+        private readonly ILogger<ShipmentController> _logger;
+        public ShipmentController(IShipmentService shipmentService, ILogger<ShipmentController> logger)
         {
-            _shipmentRepository = shipmentRepository;
+            _shipmentService = shipmentService;
             _logger = logger;
         }
 
@@ -24,7 +24,7 @@ namespace Tgl.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAllAsync()
         {
-            var shipments = await _shipmentRepository.GetAllAsync();
+            var shipments = await _shipmentService.GetAllAsync();
             if (shipments is null)
                 return NoContent();
 
@@ -39,7 +39,7 @@ namespace Tgl.API.Controllers
             if (filter == null)
                 return BadRequest();
 
-            var shipments = await _shipmentRepository.GetFilteredShipmentsAsync(filter);
+            var shipments = await _shipmentService.GetFilteredShipmentsAsync(filter);
             return Ok(shipments);
         }
     }

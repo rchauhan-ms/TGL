@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Tgl.API.Repositories;
+using Tgl.API.Services;
+using Tgl.Data.Repositories;
 using Tgl.Shared.Domain;
 
 namespace Tgl.API.Controllers
@@ -8,11 +9,11 @@ namespace Tgl.API.Controllers
     [ApiController]
     public class UserFilterController : ControllerBase
     {
-        private readonly IUserFilterRepository _userFilterRepository;
+        private readonly IUserFilterService _userFilterService;
         private readonly ILogger _logger;
-        public UserFilterController(IUserFilterRepository userFilterRepository, ILogger<IUserFilterRepository> logger)
+        public UserFilterController(IUserFilterService userFilterService, ILogger<IUserFilterRepository> logger)
         {
-            _userFilterRepository = userFilterRepository;
+            _userFilterService = userFilterService;
             _logger = logger;
         }
 
@@ -23,7 +24,7 @@ namespace Tgl.API.Controllers
         {
             try
             {
-                var filters = await _userFilterRepository.GetUserFilterAsync();
+                var filters = await _userFilterService.GetUserFilterAsync();
                 if (filters is null)
                     return NoContent();
 
@@ -32,6 +33,10 @@ namespace Tgl.API.Controllers
             catch (Exception ex)
             {
                 return NotFound();
+            }
+            finally
+            {
+                _logger.Log(LogLevel.Information, "Provided the list of user prefrences");
             }
         }
 
@@ -43,7 +48,7 @@ namespace Tgl.API.Controllers
             if (filter == null)
                 return BadRequest();
 
-            var response = await _userFilterRepository.SaveUserFilterAsync(filter);
+            var response = await _userFilterService.SaveUserFilterAsync(filter);
             return Ok(response);
         }
     }

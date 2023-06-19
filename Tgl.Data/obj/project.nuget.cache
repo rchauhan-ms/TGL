@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "keY0bosQap0GRqkupIKesSVNMZA0+FV5dmU0MdTM3u3Z/7HobKolaYn1aPvozotNAZf8IFtJeZXRb4c3NQAMgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Blazor\\Tgl\\Tgl.Data\\Tgl.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chauh\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

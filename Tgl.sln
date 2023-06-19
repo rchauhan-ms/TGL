@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgl.Shared", "Tgl.Shared\Tg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgl.SharedComponentLibrary", "Tgl.SharedComponentLibrary\Tgl.SharedComponentLibrary.csproj", "{473BF1AB-16ED-48BF-8CCD-84415E050E7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tgl.API.Tests.Unit", "Tgl.API.Tests.Unit\Tgl.API.Tests.Unit.csproj", "{B6CD135D-5DEE-4213-A8B1-A4251C30A11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tgl.Data", "Tgl.Data\Tgl.Data.csproj", "{DF7E985F-C907-4B90-A310-BDDB1093F590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{473BF1AB-16ED-48BF-8CCD-84415E050E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{473BF1AB-16ED-48BF-8CCD-84415E050E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{473BF1AB-16ED-48BF-8CCD-84415E050E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6CD135D-5DEE-4213-A8B1-A4251C30A11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CD135D-5DEE-4213-A8B1-A4251C30A11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CD135D-5DEE-4213-A8B1-A4251C30A11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CD135D-5DEE-4213-A8B1-A4251C30A11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7E985F-C907-4B90-A310-BDDB1093F590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7E985F-C907-4B90-A310-BDDB1093F590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7E985F-C907-4B90-A310-BDDB1093F590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7E985F-C907-4B90-A310-BDDB1093F590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

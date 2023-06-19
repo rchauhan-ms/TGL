@@ -1,9 +1,13 @@
-using Tgl.API.JsonParser;
-using Tgl.API.Repositories;
+
+using Tgl.API.Services;
+using Tgl.Data.JsonParser;
+using Tgl.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IShipmentService, ShipmentService>();
+builder.Services.AddScoped<IUserFilterService, UserFilterService>();
 builder.Services.AddScoped<IShipmentRepository, ShipmentRepository>();
 builder.Services.AddScoped<IUserFilterRepository, UserFilterRepository>();
 builder.Services.AddScoped<IReadAndParseJsonFile, ReadAndParseJsonFile>();

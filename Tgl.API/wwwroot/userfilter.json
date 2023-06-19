@@ -1,1 +1,1 @@
-{"FromLocationSelected":[2,4],"ToLocationSelected":[3,5],"ShipmentCostSelected":{"Id":3,"Amount":10000,"RelationalOperator":"\u003C"},"DeliveryPeriodSelected":{"StartDate":"2023-06-13T00:00:00","EndDate":"2023-06-17T23:59:59.9999999","StartDateText":"13 Jun 2023","EndDateText":"17 Jun 2023"}}
+{"FromLocationSelected":[2,4,6],"ToLocationSelected":[],"ShipmentCostSelected":{"Id":4,"Amount":0,"RelationalOperator":"\u003E"},"DeliveryPeriodSelected":{"StartDate":"0001-01-01T00:00:00","EndDate":"0001-01-01T00:00:00","StartDateText":"","EndDateText":""}}

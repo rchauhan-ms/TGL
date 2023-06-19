@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tgl.Data\Tgl.Data.csproj" />
     <ProjectReference Include="..\Tgl.UI\Tgl.UI.csproj" />
   </ItemGroup>
 
