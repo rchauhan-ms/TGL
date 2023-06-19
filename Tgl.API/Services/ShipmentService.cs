@@ -15,11 +15,15 @@ namespace Tgl.API.Services
         }
         public async Task<IEnumerable<ShipmentSummary>> GetAllAsync()
         {
+            _logger.LogInformation("Retrieving all Shipments");
+
             return await _shipmentRepository.GetAllAsync();
         }
 
         public async Task<IEnumerable<ShipmentSummary>> GetFilteredShipmentsAsync(UserFilter filter)
         {
+            _logger.LogInformation("Retrieving all Shipments based on the User preferences");
+
             var summaries = await _shipmentRepository.GetAllAsync();
 
             //TODO: Filter logic needed to be tested properly
